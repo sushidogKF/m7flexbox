@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Module 7 Project</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <style>
+	  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 0px;
+      background-color: #000000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: hotpink;
+      padding: 10px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: #222;
+      padding: 0;
+		margin: 0;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 1060px;
+      max-height: 280px;
+	  object-fit: cover
+    }
+
+    .main-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .left, .right {
+      flex: 1 1 300px;
+      background-color: #1E1E1E;
+      padding: 20px;
+    }
+
+    .right img {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    #accordion {
+      margin: 40px auto;
+      width: 80%;
+      color: black;
+    }
+	  
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ByteLight</h1>
+  </header>
+
+  <nav>
+    <a href="placeholder">Home</a>
+    <a href="placeholder">Gallery</a>
+    <a href="placeholder">Services</a>
+    <a href="placeholder">About</a>
+    <a href="placeholder">Contact Us</a>
+	<a href="placeholder">Book Now!</a>
+  </nav>
+
+  <section class="hero">
+    <img src="bytehome.png" alt="ByteLights!">
+  </section>
+
+  <section class="main-section">
+    <div class="left">
+      <h2>Welcome to ByteLight</h2>
+      <p>We are a small showlight and dj company based in San Antonio, Texas. Our goal is to enhance venues and musicians alike with art in the visual and auditory form! We do weddings, parties, confrences, and more!</p>
+		<p>Some things you should know...</p>
+		<ul><li>Your event, your vibe✨<p>We make all kinds of shows with all kinds of moods- from ambient lighting to flashing strobes, we have something for everyone.</p></li>
+		<li>Color is our language🌈<p>Every show is a visual story painted with light and sound!</p></li>
+		<li>We come to you🚚<p>As a local buisness, we operate in the San Antonio and Austin area and bring a rig that can adapt to many types of stages and venues.</p></li>
+		</ul>
+		
+    </div>
+
+    <div class="right">
+      <h2>Our latest show...</h2>
+      <p>The Electric Aliens at Area 51!</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/QLERNCRw69s?si=gJqy3zW2-sW7R7Er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	  <h3>See more in our <a href="galleryplaceholder">Gallery</a></h3>
+    </div>
+  </section>
+
+  <div id="accordion">
+    <h3>How long does it take to set up the rig?</h3>
+    <div><p>Our lighting rig takes a minimum of 30 minutes to set up pre-show. You can also request an early set up, where we set up a rig a day prior.</p></div>
+    <h3>How do I order a custom lightshow?</h3>
+    <div><p>Click on our "Book Now" button on the nav bar to make a custom purchase. We will review what you request, and work with you to make a show tailored to your vibe! We take 24 hours too respond and need a 2-4 buisness days to program a custom show.</p></div>
+    <h3>What payment methods can I use?</h3>
+    <div><p>We take Paypal, CashApp, Venmo, and cash!</p></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script>
+    $(function() {
+      $("#accordion").accordion();
+    });
+  </script>
+
+</body>
+	
+</html>
